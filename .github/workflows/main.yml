@@ -19,10 +19,10 @@ jobs:
       with:
         USER_NAME: 'RootsGH'
         USER_EMAIL: 'your-email@example.com'
-        DEVICE_TREE: 'https://github.com/xiaomi-mt6853-devs/android_device_xiaomi_cannon'
-        DEVICE_TREE_BRANCH: 'lineage-20'
         DEVICE_PATH: 'device/xiaomi/cannon'
         DEVICE_NAME: 'cannon'
         BUILD_TARGET: 'recoveryimage'
         MAINTAINER_URL: 'https://i.ibb.co.com/8gyjXq06/maintainer.png'
         GH_RELEASE: 'true'
+        MANIFEST_URL: 'https://github.com/xiaomi-mt6853-devs/android_device_xiaomi_cannon'
+        MANIFEST_BRANCH: 'lineage-20'
