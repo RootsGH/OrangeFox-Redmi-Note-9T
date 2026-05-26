@@ -1,28 +1,5 @@
-name: OrangeFox - Builder
-
-on:
-  workflow_dispatch:
-
-jobs:
-  build:
-    name: 🦊 Building OrangeFox Recovery for Redmi Note 9T 5G
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-    permissions: write-all
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-
-    - name: OrangeFox Build
-      uses: UWU-TEAM/UWU-OrangeFox-Builder@v1.0.0
-      with:
-        USER_NAME: 'RootsGH'
-        USER_EMAIL: 'your-email@example.com'
-        DEVICE_TREE: 'https://github.com/xiaomi-mt6853-devs/android_device_xiaomi_cannon'
-        DEVICE_TREE_BRANCH: 'lineage-20'
-        DEVICE_PATH: 'device/xiaomi/cannon'
-        DEVICE_NAME: 'cannon'
-        BUILD_TARGET: 'recoveryimage'
-        MAINTAINER_URL: 'https://i.ibb.co.com/8gyjXq06/maintainer.png'
-        GH_RELEASE: 'true'
+DEVICE_TREE: 'https://github.com/xiaomi-mt6853-devs/android_device_xiaomi_cannon'
+    DEVICE_TREE_BRANCH: 'lineage-20'
+    DEVICE_PATH: 'device/xiaomi/cannon'
+    DEVICE_NAME: 'lineage_cannon'
+    BUILD_TARGET: 'recoveryimage'
