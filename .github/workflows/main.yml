@@ -26,11 +26,3 @@ jobs:
         BUILD_TARGET: 'recoveryimage'
         MAINTAINER_URL: 'https://i.ibb.co.com/8gyjXq06/maintainer.png'
         GH_RELEASE: 'true'
-        AUTO_GEN_TREES: 'true'
-    
-    - name: Fix Product Config
-      run: |
-        if [ -f device/xiaomi/cannon/lineage_cannon.mk ]; then
-          cp device/xiaomi/cannon/lineage_cannon.mk device/xiaomi/cannon/twrp_cannon.mk
-          sed -i 's/lineage_cannon/twrp_cannon/g' device/xiaomi/cannon/twrp_cannon.mk
-        fi
