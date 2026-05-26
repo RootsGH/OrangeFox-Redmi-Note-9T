@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: OrangeFox Build
+    - name: Setup and Build
       uses: UWU-TEAM/UWU-OrangeFox-Builder@v1.0.0
       with:
         USER_NAME: 'RootsGH'
@@ -22,7 +22,12 @@ jobs:
         DEVICE_TREE: 'https://github.com/xiaomi-mt6853-devs/android_device_xiaomi_cannon'
         DEVICE_TREE_BRANCH: 'lineage-20'
         DEVICE_PATH: 'device/xiaomi/cannon'
-        DEVICE_NAME: 'lineage_cannon'
+        DEVICE_NAME: 'cannon'
         BUILD_TARGET: 'recoveryimage'
         MAINTAINER_URL: 'https://i.ibb.co.com/8gyjXq06/maintainer.png'
         GH_RELEASE: 'true'
+    
+    - name: Fix Config Name
+      run: |
+        cd device/xiaomi/cannon
+        cp lineage_cannon.mk twrp_cannon.mk
