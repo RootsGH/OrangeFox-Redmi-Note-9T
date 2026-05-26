@@ -17,12 +17,12 @@ jobs:
     - name: OrangeFox Build
       uses: UWU-TEAM/UWU-OrangeFox-Builder@v1.0.0
       with:
-        USER_NAME: 'MyGithubUser'
-        USER_EMAIL: 'myemail@gmail.com'
+        USER_NAME: 'RootsGH'
+        USER_EMAIL: 'your-email@example.com'
         DEVICE_TREE: 'https://github.com/xiaomi-mt6853-devs/android_device_xiaomi_cannon'
-        DEVICE_TREE_BRANCH: 'lineage-18.1'
-        DEVICE_PATH: 'device/xiaomi/cannong'
-        DEVICE_NAME: 'cannong'
+        DEVICE_TREE_BRANCH: 'lineage-20'
+        DEVICE_PATH: 'device/xiaomi/cannon'
+        DEVICE_NAME: 'cannon'
         BUILD_TARGET: 'recoveryimage'
         MAINTAINER_URL: 'https://i.ibb.co.com/8gyjXq06/maintainer.png'
         GH_RELEASE: 'true'
